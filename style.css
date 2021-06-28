@@ -1,0 +1,51 @@
+ul li {
+    list-style: none;
+}
+
+li:nth-child(1) {
+    color: green;
+}
+
+li:nth-child(even) {
+    font-size: 20px;
+}
+
+li:nth-child(odd) {
+    font-size: 18px;
+}
+
+li:nth-child(3n+1) {
+    background-color: yellow;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li::before {
+    content: "-";
+}
+
+a[title="Ученье - свет"]::before {
+    background-image: url(./cat.jpg);
+    width: 223px;
+    height: 309px;
+    content: "";
+    display: inline-block;
+}
+
+a[title="Ученье - свет"]:hover::after {
+    content: "Делай мир светлее!";
+}
+
+a[title="Ученье - свет"]::after {
+    content: "Ученье - свет";
+}
+
+
+
